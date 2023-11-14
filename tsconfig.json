@@ -1,0 +1,22 @@
+{
+
+  "compilerOptions": {
+    "noErrorTruncation": true,
+    "target": "ESNext",
+    "module": "commonjs",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "outDir": "./",
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["*"]
+    },
+    "skipLibCheck": true
+  },
+}

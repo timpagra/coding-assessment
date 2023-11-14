@@ -1,0 +1,26 @@
+{
+  "name": "coding-assigment",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently npm:start:connection npm:start:manufacturer",
+    "start:connection": "nodemon --exec ts-node -r tsconfig-paths/register external/connection/server.ts",
+    "start:manufacturer": "nodemon --exec ts-node -r tsconfig-paths/register external/manufacturer/server.ts",
+    "call:webhook": "ts-node scripts/callWebhook.ts",
+    "publish:connection": "ts-node scripts/createConnection.ts"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.9.0",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.1.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "zod": "^3.22.4"
+  }
+}
